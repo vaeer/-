@@ -1,0 +1,9 @@
+{
+  // 加这个会报错cannot find require
+  // "presets": ["@babel/preset-env", "babel-preset-react-app"], 
+  "plugins": [
+    ["import", { "libraryName": "antd-mobile-rn" }], // 与 Web 平台的区别是不需要设置 style
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["@babel/plugin-proposal-class-properties", { "loose": true}]
+  ]
+}
